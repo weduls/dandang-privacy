@@ -4,10 +4,8 @@
 Google Play Console의 "앱 콘텐츠 → 개인정보처리방침" 항목에는 공개 URL이 필요해서 GitHub Pages로 올립니다.
 
 - 개인정보처리방침: https://weduls.github.io/dandang-privacy/ — [`index.html`](index.html)
-- 계정 및 데이터 삭제: https://weduls.github.io/dandang-privacy/delete-account/ — [`delete-account/index.html`](delete-account/index.html)
 
-삭제 페이지는 Play Console "데이터 보안 → 데이터 삭제"의 **계정 삭제 요청 URL**로 쓴다.
-2026년 9월 Play 정책 경고("데이터 보안 양식의 계정 삭제 링크가 잘못됨")가 예전 주소 `sugarblood.asia/delete-account`를 가리켜서 만들었다.
+계정 삭제 안내 페이지도 있었지만, 데이터 보안 양식에서 "앱에서 계정을 만들 수 없음"으로 신고하면서 필요가 없어져 지웠다(2026-09-21).
 
 ## 고칠 때
 
