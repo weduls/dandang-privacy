@@ -3,8 +3,11 @@
 안드로이드 앱 **당당**(`com.weduls.bloodsugar`)의 개인정보처리방침을 공개하는 저장소입니다.
 Google Play Console의 "앱 콘텐츠 → 개인정보처리방침" 항목에는 공개 URL이 필요해서 GitHub Pages로 올립니다.
 
-- 공개 주소: https://weduls.github.io/dandang-privacy/
-- 내용 파일: [`index.html`](index.html)
+- 개인정보처리방침: https://weduls.github.io/dandang-privacy/ — [`index.html`](index.html)
+- 계정 및 데이터 삭제: https://weduls.github.io/dandang-privacy/delete-account/ — [`delete-account/index.html`](delete-account/index.html)
+
+삭제 페이지는 Play Console "데이터 보안 → 데이터 삭제"의 **계정 삭제 요청 URL**로 쓴다.
+2026년 9월 Play 정책 경고("데이터 보안 양식의 계정 삭제 링크가 잘못됨")가 예전 주소 `sugarblood.asia/delete-account`를 가리켜서 만들었다.
 
 ## 고칠 때
 
