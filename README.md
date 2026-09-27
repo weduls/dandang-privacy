@@ -4,6 +4,8 @@
 Google Play Console의 "앱 콘텐츠 → 개인정보처리방침" 항목에는 공개 URL이 필요해서 GitHub Pages로 올립니다.
 
 - 개인정보처리방침: https://weduls.github.io/dandang-privacy/ — [`index.html`](index.html)
+- WedulPods 개인정보처리방침 (한국어): https://weduls.github.io/dandang-privacy/wedulpods/ — [`wedulpods/index.html`](wedulpods/index.html)
+- WedulPods Privacy Policy (English): https://weduls.github.io/dandang-privacy/wedulpods/en/ — [`wedulpods/en/index.html`](wedulpods/en/index.html)
 
 계정 삭제 안내 페이지도 있었지만, 데이터 보안 양식에서 "앱에서 계정을 만들 수 없음"으로 신고하면서 필요가 없어져 지웠다(2026-09-21).
 
