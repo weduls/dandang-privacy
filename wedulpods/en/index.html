@@ -15,42 +15,69 @@
 <main>
   <div class="badge">WedulPods · Privacy</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective and last updated: September 27, 2026 · <a href="../">한국어</a></p>
+  <p class="updated">Effective and last updated: November 15, 2026 · <a href="../">한국어</a></p>
   <div class="note">
-    <p><strong>WedulPods</strong> (package ID <code>com.wedul.wedulpods</code>) is an Android app that receives Bluetooth Low Energy (BLE) broadcasts from nearby compatible earbuds and displays battery status in the app, home-screen widget, and notifications.</p>
-    <p>The app has no account or developer-operated server and does not collect or transmit personal data to the developer. The current release has no ads or in-app purchases.</p>
+    <p><strong>WedulPods</strong> (package ID <code>com.wedul.wedulpods</code>) is an Android app that shows your wireless earbuds' battery and wear status in the app, home-screen widgets, and notifications, pauses playback when you take the earbuds out, and lets you change the noise-control mode on supported models.</p>
+    <p>The developer runs no account system or server and does not collect or receive your personal data through the app. The app is free and shows ads through Google AdMob. Ad-related processing is described separately in Section 5.</p>
   </div>
-  <h2>1. Information processed and purpose</h2>
+
+  <h2>1. Information processed only on your device</h2>
   <ul>
-    <li><strong>Nearby BLE signals</strong> are processed while the app is running to display compatible earbuds' battery, charging, and wear status and provide optional features. The app does not connect to or send commands to earbuds.</li>
-    <li><strong>App preferences</strong>, such as auto-pause, case-open detection, widget color, and onboarding state, are stored in the app's private storage on your device.</li>
-    <li>Received earbud signals are used to update the app, widget, and notifications. The app does not store them in an account or developer server. Android may retain rendered widget or notification content to display it.</li>
+    <li><strong>Nearby BLE signals</strong>: battery level, charging and wear status, and case-lid state read from Bluetooth Low Energy broadcasts that compatible earbuds send publicly.</li>
+    <li><strong>Bluetooth connection to your own earbuds</strong>: only for AirPods already paired and connected to your phone, the app opens a direct Apple Accessory Protocol (AAP) connection to receive battery, wear status, model number, and the current noise-control mode. The only commands sent to the earbuds are the requests needed to keep that connection, a noise-control mode change you choose yourself, and the identity-key request below.</li>
+    <li><strong>Identity Resolving Key (IRK)</strong>: to tell your own earbuds' signals apart from other people's nearby, the app receives this key once from your connected earbuds, encrypts it with an Android Keystore key, and stores it in app-private storage. It is never logged or exported off the device.</li>
+    <li><strong>Selected earbuds</strong>: the Bluetooth address and name of the paired device you choose, and your model choice, are stored in app-private storage and used only to decide which earbuds to show.</li>
+    <li><strong>App preferences</strong>: auto-pause, case-open detection, widget style, theme, onboarding state, and similar settings you choose.</li>
   </ul>
-  <p>The app cannot determine ownership of nearby compatible earbuds. It does not identify or store Bluetooth addresses.</p>
+  <p>This information is used only for display and app features. The app does not send it to the developer or to any third party, including the ad SDK. Android itself may retain rendered widget and notification content in order to display it.</p>
+
   <h2>2. Permissions</h2>
   <ul>
-    <li><strong>Nearby-device scanning</strong> is used to receive BLE advertisements. The app does not collect location or infer location from Bluetooth signals.</li>
-    <li><strong>Notification access (optional feature)</strong> is used only when you enable auto-pause, to check active media playback state and request playback control. The app does not read or store notification titles, contents, or source-app information. Battery display and other features remain available if you decline this permission.</li>
-    <li><strong>Notifications</strong> are used to show battery status and low-battery alerts on your device.</li>
-    <li><strong>Foreground service and boot completed</strong> support BLE reception while monitoring is enabled and restore monitoring after a device restart.</li>
+    <li><strong>Nearby devices (Bluetooth scan and connect)</strong>: to receive BLE signals and connect to your paired earbuds.</li>
+    <li><strong>Location</strong>: declared because some Android versions and devices require it for BLE scanning. The app never reads or stores location coordinates and does not infer location from Bluetooth signals.</li>
+    <li><strong>Notification access (optional)</strong>: if you turn on auto-pause, used to check whether media is playing and to request playback control. The app does not read or store notification titles, contents, or source apps. All other features work without it.</li>
+    <li><strong>Display over other apps (optional)</strong>: to show the battery popup when the earbuds connect or the case opens. You grant it yourself in system settings.</li>
+    <li><strong>Notifications and vibration</strong>: to show battery status and low-battery alerts.</li>
+    <li><strong>Foreground service and boot completed</strong>: to keep receiving earbud status while monitoring is on, including with the screen off, and to restore monitoring after a restart.</li>
+    <li><strong>Internet and advertising ID</strong>: used by the Google Mobile Ads SDK to show ads (Section 5). The app's earbud features do not use the network.</li>
   </ul>
-  <p>The app does not declare the Internet, location, or advertising ID permissions. It does not request contacts, call logs, messages, camera, or microphone access.</p>
+  <p>The app does not request contacts, call logs, SMS, camera, microphone, or photos.</p>
+
   <h2>3. Retention and deletion</h2>
-  <p>Preferences remain in the app's private storage while you use the app. Clear the app's data in Android Settings or uninstall the app to remove them. Earbud signals are not transmitted to a developer server or retained in an account.</p>
-  <h2>4. Sharing and service providers</h2>
-  <p>The developer does not sell or share personal data collected through the app. The current app does not include third-party advertising, analytics, or crash-reporting SDKs. Google Play and the Android operating system may process information under their own policies to provide installation, security, and device services.</p>
-  <h2>5. Children's privacy</h2>
-  <p>This app is not designed for children. It does not collect users' personal data to a developer-operated server.</p>
-  <h2>6. Your choices and rights</h2>
-  <p>You can change Bluetooth and notification permissions in your device settings. Turning off notification access disables only auto-pause; other app features remain available. Contact the developer for privacy-related questions or requests.</p>
-  <h2>7. Security</h2>
-  <p>The app has no developer-operated server, user account, or network transmission feature and does not declare Internet permission. Preferences are kept in Android's app-private storage. Security of the operating system, device backups, rooting, and other conditions outside the app depends on your device and platform settings.</p>
-  <h2>8. Future changes</h2>
-  <p>The current release has no ads or in-app purchases. If payment features, advertising, or new data processing are added, this policy and relevant Google Play disclosures will be updated before that version is released.</p>
-  <h2>9. Trademark notice</h2>
-  <p>WedulPods is not affiliated with, sponsored by, or endorsed by Apple Inc. Apple, AirPods, and Beats are trademarks of their respective owners and are mentioned only to describe compatibility.</p>
-  <h2>10. Contact</h2>
-  <div class="contact"><strong>Privacy contact</strong><br>Developer: Jeongcheol (wedul)<br>Email: <a href="mailto:wedul.chul@gmail.com">wedul.chul@gmail.com</a></div>
+  <p>The information in Section 1 stays in app-private storage on your device while you use the app. Clearing the app's data (Settings → Apps → WedulPods → Storage) or uninstalling the app deletes all of it. Nothing is kept on a developer server. Ad-related retention is covered in Section 5.</p>
+
+  <h2>4. Sharing with third parties</h2>
+  <p>The developer does not sell or share your personal data. The only third-party SDK in the app is the Google Mobile Ads SDK (including Google's User Messaging Platform for consent). There is no analytics or crash-reporting SDK. Google Play and the Android operating system process data under their own policies.</p>
+
+  <h2>5. Advertising (Google AdMob)</h2>
+  <p>Ads appear only inside the app's own screens, never in home-screen widgets, notifications, connection popups, or the lock screen. To serve ads, Google processes the following as an independent controller.</p>
+  <ul>
+    <li><strong>Recipient</strong>: Google LLC (United States) and its affiliates</li>
+    <li><strong>Data</strong>: advertising ID, IP address (and approximate region derived from it), device information such as model, OS, and language, app information, and ad interactions such as impressions and clicks</li>
+    <li><strong>Purposes</strong>: serving and measuring ads, frequency capping, preventing fraud and invalid clicks, and personalized ads where you allow them</li>
+    <li><strong>International transfer</strong>: sent over the network when an ad is requested, to the United States and other countries where Google processes data</li>
+    <li><strong>Retention</strong>: as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  </ul>
+  <p>Earbud signals, Bluetooth addresses, identity keys, and other Section 1 information are never passed to the ad SDK. The developer receives only aggregated reports from Google, such as earnings and impression counts, and cannot identify individual users from them.</p>
+  <p><strong>Your choices</strong>: in Android Settings → Privacy (or Google) → Ads you can delete or reset your advertising ID, which stops personalized ads. Where the law requires consent (such as the EEA and UK), the app asks before showing ads and lets you change your choice in its settings. Declining never limits app features; you may still see non-personalized ads. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+
+  <h2>6. Children</h2>
+  <p>The app is not directed at children under 14 (or the minimum age in your country), and the developer does not knowingly collect children's personal data.</p>
+
+  <h2>7. Your choices and rights</h2>
+  <p>You can change Bluetooth, location, notification, and display-over-other-apps permissions at any time in system settings, and clearing the app's data removes everything stored on the device. Requests about ad data processed by Google follow your Google Account and the Google Privacy Policy. For any privacy question or request, use the contact below.</p>
+
+  <h2>8. Security</h2>
+  <p>The developer operates no server or user accounts. The identity key is encrypted with an Android Keystore key held in the device's secure hardware and cannot be decrypted if restored onto another device. Security outside the app, such as the OS, backup settings, or rooting, depends on your device and platform.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If payments or new data processing are added, this policy and the related Google Play disclosures will be updated, with a new effective date, before that version is released.</p>
+
+  <h2>10. Trademarks</h2>
+  <p>WedulPods is not affiliated with, sponsored, or endorsed by Apple Inc. Apple, AirPods, and Beats are trademarks of their respective owners and are mentioned only to describe compatibility.</p>
+
+  <h2>11. Privacy contact</h2>
+  <div class="contact"><p><strong>Privacy contact</strong><br>Developer: Jeongcheol (wedul)<br>Email: <a href="mailto:wedul.chul@gmail.com">wedul.chul@gmail.com</a></p></div>
   <footer>WedulPods · Privacy Policy</footer>
 </main>
 </body>
